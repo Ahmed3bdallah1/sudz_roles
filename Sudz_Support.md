@@ -42,35 +42,11 @@ See [`PRIVACY_POLICY.md`](./PRIVACY_POLICY.md) for how we handle personal data.
 | App Store: missing location usage strings | Add required keys in `ios/Runner/Info.plist` (e.g. `NSLocationWhenInUseUsageDescription`, `NSLocationAlwaysAndWhenInUseUsageDescription`) with clear user-facing text. |
 | API paths out of date | Regenerate endpoints per [`README.md`](./README.md) using `tool/generate_endpoints.dart` and the Postman collections. |
 
-### Useful commands
-
-```bash
-flutter pub get
-flutter analyze
-flutter test
-```
-
-```bash
-# Android release bundle (Play Store)
-flutter build appbundle
-
-# iOS (from macOS)
-flutter build ipa
-```
-
-### Repository layout (quick reference)
-
-- `lib/` — Flutter app source (features, core, routing).
-- `android/`, `ios/` — Native project configuration and assets.
-- `assets/translations/` — Localization (`en`, `ar`, etc.).
-
----
-
 ## Reporting bugs (internal)
 
 When filing an issue, include:
 
-1. App version (from **Settings** / **About** or `pubspec.yaml` `version:`).
+1. App version (from **Settings** / **About**).
 2. OS and device model.
 3. Steps to reproduce and expected vs actual behavior.
 4. Screenshots or logs if possible (redact tokens and personal data).
